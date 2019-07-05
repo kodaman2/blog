@@ -10,7 +10,7 @@ Jekyll-Now [Quick Start](https://github.com/barryclark/jekyll-now#quick-start)
 - Fork [jekyll-now](https://github.com/barryclark/jekyll-now)
 - Rename repo to username.github.io under settings. If this is not your main site, you can also just name it whatever. For example my main github.io is used as a portfolio, so I just renamed mine to "blog". Github pages will automatically serve it at kodaman2.github.io/blog.
 
-If this is your github.io page, then it will be ready to view with a demo post. If this is not your github.io repo, then go to settings, scroll down to Github Pages, and select the branch. Once that's done you'll should be able to see your site.
+If this is your github.io page, then it will be ready to view with a demo post. If this is not your github.io repo, then go to settings, scroll down to Github Pages, and select the branch. Once that's done you should be able to see your site.
 
 ## Configure _config.yml
 
