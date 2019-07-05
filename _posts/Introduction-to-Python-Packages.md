@@ -1,10 +1,6 @@
 ---
 layout: post
 title: Part 1 Introduction to Python Packages
-published: false
-description: python packages
-tags: python, pip, pypi
-series: Python Packages Development
 ---
 
 This will be the first article in the series, where I intent to show you everything about Python Packaging. Well maybe not everything, but everything you need to know about creating a self contained module that you can deploy to the Python Packing Index aka [PyPi](https://pypi.org/), and Github for the world to consume.
