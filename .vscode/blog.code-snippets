@@ -23,10 +23,6 @@
 			"---",
 			"layout: post",
 			"title: $1",
-			"published: false",
-			"description: $2", 
-			"tags: $3", 
-			"series: $4",
 			"---"
 		],
 		"description": "Front matter for posts"
