@@ -72,3 +72,37 @@ Same as with the buffers command, but with all files within the directory you ar
 Note how fzf picks up strnumcmp.c when searching for num. If you start the search with ```'``` it will look for whole words.
 
 ![files_02]({{ site.baseurl }}/images/vim-shortcuts/files_02.png)
+
+## 5 Launch terminal
+
+This is just personal preference, because when you are in vim you are in the terminal, if you use iTerm2 then you can switch between tabs relatively easy.
+
+If you want to have a terminal tab within vim I use [split-term](https://github.com/vimlab/split-term.vim) plugin. Keep in mind I use neovim, let me know if you also use this or some other plugin in vim.
+
+There are far too many configurations to talk about to make sure to visit the repo.
+
+- :Term Opens a new terminal buffer using :new (splits horizontally)
+- :VTerm Opens a new terminal buffer using :vnew (splits vertically)
+- :TTerm Opens a new terminal buffer using :tabnew (new tab)
+
+![terminal]({{ site.baseurl }}/images/vim-shortcuts/terminal.png)
+
+## 6 Delete Everything to the Left/Right
+
+This is far too easy with vim. Move your cursor to where you want it with motions or hjkl, if you want to delete everything to the left ```d0```, if you want to do to the right ```d$```.
+
+![delete_left_right]({{ site.baseurl }}/images/vim-shortcuts/delete_left_right.gif)
+
+Another good one is the ```t``` (until). So if you want to delete until a bracket you would do ```dt)```.
+
+![delete_until]({{ site.baseurl }}/images/vim-shortcuts/delete_until.gif)
+
+## 7 Delete Previous Word
+
+If you are writing some text and you make a mistake, exit insert mode, and do ```daw``` (delete a word).
+
+If you want to delete the whole line, you can do ```dd```.
+
+For more tips on this do ```:help diw``` in vim.
+
+![daw]({{ site.baseurl }}/images/vim-shortcuts/daw.gif)
