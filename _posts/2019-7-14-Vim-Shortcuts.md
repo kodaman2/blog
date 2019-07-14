@@ -9,7 +9,7 @@ I'll be using this repo for the examples
 [coreutils](https://github.com/wertarbyte/coreutils) just clone it to your git directory.
 
 ## 1. Search Text Through All Files At Once
-Probably one of the best fzf utilities for terminal is [fzf](https://github.com/junegunn/fzf), if you've ever used ```everything``` on windows then you know what I am talking about. fzf as the name implies is a fuzzy finder. fzf is supercharged with a bunch of nice commands. To use it on vim you need to have it installed first.
+Probably one of the best utilities for terminal is [fzf](https://github.com/junegunn/fzf), if you've ever used ```everything``` on windows then you know what I am talking about. fzf as the name implies is a fuzzy finder. fzf is supercharged with a bunch of nice commands. To use it on vim you need to have it installed first.
 
 ```
 brew install fzf
@@ -48,3 +48,27 @@ v%
 ```
 
 ![select_visual]({{ site.baseurl }}/images/vim-shortcuts/select_visual.gif)
+
+## 3 Open a file in the buffer with fzf
+
+If you ever need help on fzf utility you can do ```:help fzf``` within vim. You can see the help file, and all the commands it does. Buffers command show you all the buffers opened at the moment. Then if you start typing you can do fzf finding if you have lots of buffers opened.
+
+```
+:Buffers
+```
+
+![open_buffers]({{ site.baseurl }}/images/vim-shortcuts/open_buffers.png)
+
+## 4 Find a file in the project with fzf
+
+Same as with the buffers command, but with all files within the directory you are working with.
+
+```
+:Files
+```
+
+![files_01]({{ site.baseurl }}/images/vim-shortcuts/files_01.png)
+
+Note how fzf picks up strnumcmp.c when searching for num. If you start the search with ```'``` it will look for whole words.
+
+![files_02]({{ site.baseurl }}/images/vim-shortcuts/files_02.png)
