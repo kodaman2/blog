@@ -8,7 +8,7 @@ This is a follow up post to this amazing [post](https://dev.to/jsmanifest/21-vsc
 I'll be using this repo for the examples
 [coreutils](https://github.com/wertarbyte/coreutils) just clone it to your git directory.
 
-## 1. Search Text Through All Files At Once
+## 1 Search Text Through All Files At Once
 Probably one of the best utilities for terminal is [fzf](https://github.com/junegunn/fzf), if you've ever used ```everything``` on windows then you know what I am talking about. fzf as the name implies is a fuzzy finder. fzf is supercharged with a bunch of nice commands. To use it on vim you need to have it installed first.
 
 ```
@@ -28,7 +28,7 @@ For this next example, simply do ```:Lines``` then type whatever you're looking 
 
 Fzf is amazingly fast, no kidding try it on a big project.
 
-## 2. Select lines inside brackets
+## 2 Select lines inside brackets
 
 There are quite a few ways to select text in vim, in fact you don't even need visual mode to do it.
 
@@ -101,8 +101,129 @@ Another good one is the ```t``` (until). So if you want to delete until a bracke
 
 If you are writing some text and you make a mistake, exit insert mode, and do ```daw``` (delete a word).
 
-If you want to delete the whole line, you can do ```dd```.
-
 For more tips on this do ```:help diw``` in vim.
 
 ![daw]({{ site.baseurl }}/images/vim-shortcuts/daw.gif)
+
+## 8 Select Words
+
+Visual mode in vim is just another world in itself, it has line, block, and columns modes. To select words make sure you are in visual mode by hitting lower ```v```. Then press ```w``` to select next word. Let's say you selected a word you don't want, hit ```b``` for back, most vim commands have some sort of pnemonic. There is also ```e``` for end of word.
+
+![word_select]({{ site.baseurl }}/images/vim-shortcuts/word_select.gif)
+
+## 9 Selecting Lines
+
+Visual Lines mode, let's you select lines easily.
+Enter lines mode with upper case ```V```.
+
+![lines_select]({{ site.baseurl }}/images/vim-shortcuts/lines_select.gif)
+
+## 10 Duplicate a Line
+
+Simply yank the line with ```yy```, the paste with ```p```.
+
+![duplicate_line]({{ site.baseurl }}/images/vim-shortcuts/duplicate_line.gif)
+
+## 11 Move to Beginning/End of File
+
+Moving in vim is such of breeze. Top of the file with ```gg```, and ```G``` to the end of the file.
+
+![start_end]({{ site.baseurl }}/images/vim-shortcuts/start_end.gif)
+
+## 12 Move Up/Down a File
+
+You can move up and down a file with ```CTRL+U``` and ```CTRL+D```, also you can use ```SHIFT+ {``` and ```SHIFT+}```.
+
+## 13 Search Words in a File
+
+Searching for words in a file with vim is pretty cool, but not as cool as fzf. To search for a word you do ```/``` then type the word to find. To go to next word you hit ```n```, and to go to previous word ```N```. In addition you can search backwards with ```?```.
+
+## 14 Replace Words in a File
+
+Search and replace can take various forms.
+
+```
+:%s/search/replace/gc
+```
+
+- % indicates search in the whole file
+- g for global, meaning all occurrences
+- c is for confirmation
+
+When you run this command you'll get a confirmation where you can hit yes or no for each instance or simply hit ```a``` to replace all instances.
+
+![replace]({{ site.baseurl }}/images/vim-shortcuts/replace.gif)
+
+## 15 Move Line Up/Down
+
+Vim provides a move command for moving lines around.
+
+```
+:move+1
+:move-2
+```
+
+## 16 Delete a Line
+
+If you want to delete the whole line, you can do ```dd```.
+
+## 17 Add Cursor Multiple Lines
+
+- Move the cursor to the position on first line.
+- Enter visual block mode (ctrlv).
+- Press j three times (or 3j).
+- Press I (Uppercase i).
+- Type in whatever.
+Press esc.
+
+Seems like a lot but once you get used it is quick.
+
+![multiline]({{ site.baseurl }}/images/vim-shortcuts/multiline.gif)
+
+## 18 EasyMotion in Vim
+
+EasyMotion is a cool plugin that helps with traversing thorugh text really quick, it also works within vscode if you are interested in trying vim in vscode, thought the shortcomings of using vim in vscode is that you can't bring in any plugins other than the ones provided by the vscodevim plugin.
+
+Make sure to check out [github](https://github.com/easymotion/vim-easymotion) for full description of the plugin.
+
+![easymotion]({{ site.baseurl }}/images/vim-shortcuts/easymotion.gif)
+
+## 19 NerdTree
+
+Another cool plugin for looking in directories is [NerdTree](https://github.com/scrooloose/nerdtree). 
+
+![tree]({{ site.baseurl }}/images/vim-shortcuts/tree.gif)
+
+For more plugins visit https://vimawesome.com/
+
+## 20 Bookmarking aka Marks
+
+I am not sure if vscode has this feature, but nevertheless is pretty cool in vim. You just put your cursor in a line, and hit ```m``` and a letter or number.
+
+If you do ```ma``` then your mark will be ```a```
+
+To see your current marks, you can do (Marks to use with fzf plugin):
+
+```
+:marks
+:Marks
+```
+
+![marks]({{ site.baseurl }}/images/vim-shortcuts/marks.png)
+
+You can also delete marks:
+
+```
+:delmarks a
+```
+Delete all lowercase marks:
+
+```
+:delmarks!
+```
+
+If you ever got too many marks you can delete ```~/.viminfo``` which contains history and marks.
+
+## Conclusion
+
+Lots of cool stuff you can do with Vim, I particularly which I could do vim with all the plugins but in a vscode environment, and I think that's what Oni is trying to accomplish. Let me know what you think or what cool tricks or plugins you use in vim. Hasta la vimsta baby!
