@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vim Shortcuts to Make Life Easier
+title: 20 Vim Shortcuts to Make Life Easier
 ---
 
 This is a follow up post to this amazing [post](https://dev.to/jsmanifest/21-vscode-shortcuts-to-make-coding-faster-and-more-fun-3b4m) on vscode shortcuts. I thought it would be fun to try and make the same or similar shortcuts on vim for comparison. Now mind you I am a relative new vimmer, more like a casual vimmer lol. Staying within the home row does provide faster work flow, like a painter bonding with the canvas. For my everyday use I mostly use Intellij/Android Studio, and vscode. I have vim mode turned on and I do turn it off when I feel is getting in the way.
