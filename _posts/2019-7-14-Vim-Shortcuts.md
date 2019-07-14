@@ -8,7 +8,7 @@ This is a follow up post to this amazing [post](https://dev.to/jsmanifest/21-vsc
 I'll be using this repo for the examples
 [coreutils](https://github.com/wertarbyte/coreutils) just clone it to your git directory.
 
-# 1. Search Text Through All Files At Once
+## 1. Search Text Through All Files At Once
 Probably one of the best fzf utilities for terminal is [fzf](https://github.com/junegunn/fzf), if you've ever used ```everything``` on windows then you know what I am talking about. fzf as the name implies is a fuzzy finder. fzf is supercharged with a bunch of nice commands. To use it on vim you need to have it installed first.
 
 ```
@@ -20,5 +20,31 @@ Then you add it to your Plug vimrc, I use [vim-plug](https://github.com/junegunn
 ```
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
- ```
+```
+
+For this next example, simply do ```:Lines``` then type whatever you're looking for. Fzf will look in the opened buffers, if you are looking just in one buffer then do ```:BLines```. A cool thing about fzf is well that it finds anything even if missing a few letters here and there. Also if you don't want fuzzy finding you can start the fzf commands with a single quote ```'```.
+
 ![fzf_lines]({{ site.baseurl }}/images/vim-shortcuts/fzf_lines.gif)
+
+Fzf is amazingly fast, no kidding try it on a big project.
+
+## 2. Select lines inside brackets
+
+There are quite a few ways to select text in vim, in fact you don't even need visual mode to do it.
+
+Place cursor in a bracket or inside the brackets.
+
+```
+ya(
+ya{
+```
+
+![yanking_bracketts]({{ site.baseurl }}/images/vim-shortcuts/yanking_brackets.gif)
+
+If you'd like to do it visually, place cursor in a bracket, then you can do yank(y), or cut(d).
+
+```
+v%
+```
+
+![select_visual]({{ site.baseurl }}/images/vim-shortcuts/select_visual.gif)
