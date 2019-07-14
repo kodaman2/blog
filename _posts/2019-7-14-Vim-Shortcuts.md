@@ -227,3 +227,5 @@ If you ever got too many marks you can delete ```~/.viminfo``` which contains hi
 ## Conclusion
 
 Lots of cool stuff you can do with Vim, I particularly which I could do vim with all the plugins but in a vscode environment, and I think that's what Oni is trying to accomplish. Let me know what you think or what cool tricks or plugins you use in vim. Hasta la vimsta baby!
+
+If you're interested in checking out my vimrc file check [here](https://gist.github.com/kodaman2/53ffc1e122c5319c90d4d898920a270a)
