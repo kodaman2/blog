@@ -82,7 +82,7 @@ NameError: name 'say_hello' is not defined
 
 ## Adding a py module to init
 
-Open \__init__\.py inside the package folder, and below the version insert the following: `(note the dot before the module name)`:
+Open \__init__\.py inside the package folder, and below the version insert the following `(note the dot before the module name)`:
 
 ```
 from .another_package import *
