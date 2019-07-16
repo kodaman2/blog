@@ -38,13 +38,13 @@ In less than a minute a whole project was created with all necessary files for a
 
 ## Adding a Function to Test the Package
 
-I use vscode, so inside the main package directory run, to bring up the project in vscode:
+I use vscode, so inside the main package directory run:
 
 ```
 code .
 ```
 
-We'll reuse our `hello_world` function to make sure the project works as expected:
+We'll reuse our `say_hello` function to make sure the project works as expected:
 
 ```python
 # -*- coding: utf-8 -*-
