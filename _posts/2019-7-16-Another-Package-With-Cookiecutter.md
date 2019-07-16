@@ -3,7 +3,7 @@ layout: post
 title: Another Package with Cookiecutter 
 ---
 
-In the previous post we've setup a basic package by manually creating the structure. In this post we will leverage a very cool package [Cookiecutter](https://github.com/cookiecutter/cookiecutter). Cookiecutter can clone the directory of another repo or even a local directory, and then it prompts for things like name, version, license, etc. You'll have a python package ready for you to code in no time. There is a huge database of already made templates too, not just for python.
+In the previous post we've setup a basic package by manually creating the structure. In this post we will leverage a very cool package [Cookiecutter](https://github.com/cookiecutter/cookiecutter). Cookiecutter can clone the directory of another repo or even a local directory. You'll have a python package ready in no time. There is a large database of templates too, not just for python.
 
 ## Installing Cookiecutter
 
@@ -43,7 +43,7 @@ I use vscode, so inside the main package directory run, to bring up the project 
 code .
 ```
 
-We'll reuse our hello_world function to make sure things work before getting ahead of ourselves, delete the main module comment:
+We'll reuse our `hello_world` function to make sure the project works as expected:
 
 ```python
 # -*- coding: utf-8 -*-
@@ -82,7 +82,7 @@ NameError: name 'say_hello' is not defined
 
 ## Adding a py module to init
 
-Open \__init__\.py inside the package folder, and right below the version insert the below line `(note the dot before the module name)`:
+Open \__init__\.py inside the package folder, and below the version insert the following: `(note the dot before the module name)`:
 
 ```
 from .another_package import *
@@ -100,7 +100,7 @@ Exit python, and relaunch to reload another_package.
 hello fer
 ```
 
-Just as seen in the previous post we've built a package, but much faster and will avoid mistakes like adding a readme file or license. 
+With this process in place you won't be forgetting adding a readme file or a license ever again.
 
 ## A word on cookiecutter
 
