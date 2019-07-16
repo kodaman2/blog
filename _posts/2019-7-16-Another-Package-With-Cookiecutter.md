@@ -26,7 +26,7 @@ Since github is the defacto for repositories you can also run:
 ```
 cookiecutter gh:audreyr/cookiecutter-pypackage
 ```
-`Note: Make sure to say n for cli`
+`Note: Make sure to say 2 for cli`
 ![prompts](https://kodaman2.github.io/blog/images/python-package-series/cookiecutter-prompts.png)
 
 All set and done:
@@ -72,6 +72,14 @@ At this point we can test our function. Launch python3 in the terminal or launch
 
 Won't run huh? We forgot to do one thing, and that is to add our python module to the init file. The reason it fails is that it doesn't know what functions to include in the package.
 
+```
+>>> from another_package import *
+>>> say_hello("fer")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'say_hello' is not defined
+```
+
 ## Adding a py module to init
 
 Open \__init__\.py inside the package folder, and right below the version insert the below line `(note the dot before the module name)`:
@@ -84,6 +92,8 @@ Here we tell init to import all our functions.
 
 ## Test 2
 
+Exit python, and relaunch to reload another_package.
+
 ```
 >>> from another_package import *
 >>> say_hello("fer")
@@ -94,7 +104,7 @@ Just as seen in the previous post we've built a package, but much faster and wil
 
 ## A word on cookiecutter
 
-If you have a project that needs certain structure you can do another template. I usually just do python utilities and use the python template. If you need a specific template that doesn't exist already, make sure to read the docs.
+If you have a project that needs certain structure you can do another template. I usually just do python utilities and use the python template. If you need a specific template that doesn't exist already, make sure to read the docs on how to create a template.
 
 ## Next Article
 
