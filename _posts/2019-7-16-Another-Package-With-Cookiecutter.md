@@ -3,6 +3,7 @@ layout: post
 title: Another Package with Cookiecutter 
 ---
 
+Set your oven to 350F, or 175C in this post we will be baking a python package.
 In the previous post we've setup a basic package by manually creating the structure. In this post we will leverage a very cool package [Cookiecutter](https://github.com/cookiecutter/cookiecutter). Cookiecutter can clone the directory of another repo or even a local directory. You'll have a python package ready in no time. There is a large database of templates too, not just for python.
 
 ## Installing Cookiecutter
