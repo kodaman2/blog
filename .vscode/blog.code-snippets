@@ -18,7 +18,7 @@
 
 	"Add Front Matter": {
 		"scope": "markdown",
-		"prefix": "fmat",
+		"prefix": "fmatter",
 		"body": [
 			"---",
 			"layout: post",
