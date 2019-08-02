@@ -5,6 +5,15 @@ title: Part 1 Introduction to Python Packages
 
 This will be the first article in the series, where I intent to show you everything about Python Packaging. Well maybe not everything, but everything you need to know about creating a self contained module that you can deploy to the Python Packing Index aka [PyPi](https://pypi.org/), and Github for the world to consume.
 
+## The list as of today for the topics in the series
+- Introduction to Python Packages
+- A Basic Package
+- Another Package with Cookiecutter
+- Argparse and Script Entry Points
+- Publish package to github (or any git repository)
+- Deploy to PyPi
+- Lessons learned, and beyond scope topics
+
 ## Why should you ever need a package?
 If you are a programmer, and chances are 99% certain since you are reading this article. There comes a time where a lightbulb goes off in your head. You have an idea for a wonderful python project. Even better you think it would benefit the community or certain group. It can be a tool, helper functions, even a small script. Whatever the idea might be, publishing a package can make sure your work is available for others to use, or even future you should something happen to your computer. (Yeah I know that's the monitor lol)
 
